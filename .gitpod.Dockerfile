@@ -2,4 +2,5 @@ FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.
 RUN sudo apt-get update \
-    && sudo rm -rf /var/lib/apt/lists/*
+    && apt install -yq xubuntu-desktop xfce4-terminal firefox nano tar wget \
+    && echo completed 
